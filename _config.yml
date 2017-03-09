@@ -1,0 +1,21 @@
+# Site settings
+title: Hitchhiker's Guide to Programming
+header-img: img/home-bg.png
+email: andrewbonner92@gmail.com
+copyright_name: abonner1
+description: > # this means to ignore newlines until "baseurl:"
+  "DON'T PANIC"
+baseurl: "" # the subpath of your site, e.g. /blog
+twitter_username: andrewbonner2
+github_username:  abonner1
+learn_profile: abonner1
+email_username: andrewbonner92@gmail.com
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+
+gems: [jekyll-paginate, jekyll-feed]
