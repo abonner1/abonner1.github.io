@@ -9,7 +9,7 @@ I should start by introducing myself. The best introduction I could think of was
 
 The name's Andrew, and aside from being a "digital native" like most 90's kids, my knowledge of programming was pretty lacking until I hit college. I studied English literature in undergrad, something I don't regret, although it was hardly useful in the real world after graduation. Naturally a degree in English landed me a job in a library. That's when I discovered programming.
 
-[War Games - Want to play a game? Clip](https://youtu.be/D-9l5jSDL50)
+![War Games - Want to play a game? Clip](https://youtu.be/D-9l5jSDL50)
 
 Not gonna lie, it felt kinda like this clip from *War Games* (told you they were coming!). The library I worked for had encouraged me to get a Masters in Library Science. I know what you're thinking and yes, librarians need masters degrees. Also, yes, I've been asked this way too many times. This degree offered a few programming courses and one in Web Development. I took all of them!
 
