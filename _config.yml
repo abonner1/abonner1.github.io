@@ -1,10 +1,10 @@
 # Site settings
-title: Hitchhiker's Guide to Programming
+title: Hello World!
 header-img: img/home-bg.png
 email: andrewbonner92@gmail.com
 copyright_name: abonner1
 description: > # this means to ignore newlines until "baseurl:"
-  "DON'T PANIC"
+  A blog of programming and life with 80's movies
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: andrewbonner2
 github_username:  abonner1
