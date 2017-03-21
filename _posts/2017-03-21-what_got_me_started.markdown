@@ -11,7 +11,7 @@ The name's Andrew, and aside from being a "digital native" like most 90's kids, 
 
 [War Games - Want to play a game? Clip](https://youtu.be/D-9l5jSDL50)
 
-Not gonna lie, it felt kinda like this clip from *War Games* (told you they were coming!). The library I worked for had encouraged me to get a Masters in Library Science. I know what you're thinking and yes, librarians need masters degrees. Also, yes, I've been asked this way too many times. This degree offered a few programming courses and one in Web Development. I took all of them!
+Not gonna lie, it felt kinda like this clip from *War Games* (I warned you about 80's!). The library I worked for had encouraged me to get a Masters in Library Science. I know what you're thinking and yes, librarians need masters degrees. Also, yes, I've been asked this way too many times. This degree offered a few programming courses and one in Web Development. I took all of them!
 
 There was a certain satisfaction from plugging code into the terminal or designing a web page in the browswer and seeing it appear on the screen, and I wanted more and more to make that my life. Let's just say answering reference questions didn't sound appealing when I could make CLI applications and interactive websites. However, when I finished all that I knew I still only carried a beginner's knowledge of coding, which is what brought me to enrolling in Flatiron School's Full Stack Web Development program.
 
