@@ -18,7 +18,7 @@ they never covered. Well I did just that. I'll explain my solution to the proble
 their solution (bottom), which I added into my code after checking it with their's after submission. Don't worry, no way to 
 cheat here! ;)
 
-I discovered a new method called '''.gsub''' in my research, not to mention the possibility of shoveling(```<<```) into strings
+I discovered a new method called ```.gsub``` in my research, not to mention the possibility of shoveling(```<<```) into strings
 like you can arrays. Basically, what my code is doing is:
 1. It tests an array's length to see if it's more than two, meaning any list of more than 2 items.
 2. If it is, the array is ```.join```ed into a string with a comma and space separating them.
