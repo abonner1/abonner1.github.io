@@ -28,7 +28,9 @@ like you can arrays. Basically, what my code is doing is:
 If someone wrote out the process it would look like this:
 ```
 string.["Harry", "Ron", "Hermoine", "Draco"].join(", ") #=> "Harry, Ron, Hermoine, Draco"
+
 "Harry, Ron, Hermoine, Draco".gsub(array.last, "and") #=> "Harry, Ron, Hermoine, and"
+
 "Harry, Ron, Hermoine, and " << " #{array.last}" #=> "Harry, Ron, Hermoine, and Draco"
 ```
 
