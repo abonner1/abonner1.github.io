@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "How I Did It"
-date:   2017-04-07 15:04:27 +0000
+date:   2017-04-07 11:04:28 -0400
 ---
 
-![Young Frankenstein - How I Did iIt](http://imgur.com/TgSF15c)
+![Young Frankenstein - How I Did iIt](http://i.imgur.com/TgSF15c.gif)
 
 Okay so maybe this is a little dramatic, but I made tic tac toe game that can't beat itself. I know what your thing: isn't that a bad thing? Actually it's not as far as tic tac toe goes. A perfect game of tic tac toe, one in which at least one player knows some strategy, is impossible to win.
 
@@ -18,11 +18,11 @@ I'll tell you I tried planning it out move by move, making an AI so detailed it 
 
 The rest of this post will dive into some of the code I used to make my tic tac toe AI (Artificial Inteligence). If you're in Flatiron's Full Stack Dev program like me, have a little going through it, build it on your own first, then see what I have to say.
 
-![Code](http://imgur.com/fD4vpZh)
+![Code](http://i.imgur.com/fD4vpZh.png)
 
 Here is the nexus of my computer's AI. Look's simple, right? If the middle square isn't taken, the computer should grab it, otherwise, it should strategize. It took my awhile to come up with that, but I needed my move method to be simple, refactored down to its simplest form. (Ignore the stuff about adding 1 or changing it to a string, all of that stuff was required by the programs other modules for the test suite, and not anything I would have added to my code if I had my way).
 
-![More Code](http://imgur.com/S9csQ3S)
+![More Code](http://i.imgur.com/S9csQ3S.png)
 
 This part is even better. Basically, I'm telling the computer to analyze whether it has a winning move, a blocking move, if it should take a corner, or whether the move needs only a random number between 0 and 8.
 
@@ -30,7 +30,7 @@ Picking a corner was the easiest to program. Random selections were harder to co
 
 The code I'm most proud of is the crux of what both my `.win(board)` method and my `.block(board)` method rely on.
 
-![Even More Code](http://imgur.com/tzG0qZd)
+![Even More Code](http://i.imgur.com/tzG0qZd.pngd)
 
 It's beautiful right? I think it's best I explain this a little. `Game::WIN_COMBINATIONS` is a constant in `class Game` that keeps track of all of the ways one can win at tic tac toe. I spaced out the rest of it for easy viewing, but what's going on is it checks to see if either the first two, the last two, or the first and last of a combination are taken and by the same token. For the first combo where this returns true the `.detect` method sends an array of the winning combo back to the functions that called it. Once again forgive the added integers in there. They're necessary to make the code run since the method they are calling was intended for the user.
 
@@ -40,7 +40,7 @@ Believe it or not, there isn't much more to it. Just a few functions that tie up
 
 I must admit that I didn't expect my AI to be unable to beat itself, but when I programmed it to play itself a hundred times, this happend:
 
-![War Games - Tic Tac Toe](http://imgur.com/Ks0kdQV)
+![War Games - Tic Tac Toe](http://i.imgur.com/Ks0kdQV.gif)
 
 I was ecstatic.
 
