@@ -1,18 +1,18 @@
 ---
 layout: post
 title:  "It's ALIVE!"
-date:   2017-04-11 02:08:18 +0000
+date:   2017-04-10 22:08:19 -0400
 ---
 
 ## Building a CLI Gem
 
-![It's ALIVE! - Young Frankenstein](blob:http://imgur.com/9183966a-9f9a-48e0-b9aa-3408db8be8c3)
+![It's ALIVE! - Young Frankenstein](http://i.imgur.com/2VwgBem.gif)
 
 Stick with me long enough and you'll learn I'm a huge fan of *Young Frankenstein*. Just a fair warning...
 
 I'd liken the process of making a CLI gem to Dr. Frankenstein giving life to his monster: once your creation has life and complete control of its limbs, it'll get grand ideas in its head and run amok awhile before you can reel that monster in and teach it a beguiling tap dance.
 
-![Puttin' on the Ritz - Young Frankenstein](blob:http://imgur.com/9d46d3ef-037a-4b95-87cf-2200a4b02024)
+![Puttin' on the Ritz - Young Frankenstein](http://i.imgur.com/ZUy70Rl.gif)
 
 This post is going to detail two major problems I faced building my CLI gem.
 
@@ -40,4 +40,4 @@ I'll readily admit I don't have everything figured out when it comes to gemspecs
 
 I can't wait for my assessment and some helpful criticism. Until then...
 
-![Give my creation life! - Young Frankenstein](http://i.imgur.com/hkcRLXV.mp4
+![Give my creation life! - Young Frankenstein](http://i.imgur.com/hkcRLXV.gif4)
