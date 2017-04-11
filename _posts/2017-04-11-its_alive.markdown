@@ -1,0 +1,43 @@
+---
+layout: post
+title:  "It's ALIVE!"
+date:   2017-04-11 02:08:18 +0000
+---
+
+## Building a CLI Gem
+
+![It's ALIVE! - Young Frankenstein](blob:http://imgur.com/9183966a-9f9a-48e0-b9aa-3408db8be8c3)
+
+Stick with me long enough and you'll learn I'm a huge fan of *Young Frankenstein*. Just a fair warning...
+
+I'd liken the process of making a CLI gem to Dr. Frankenstein giving life to his monster: once your creation has life and complete control of its limbs, it'll get grand ideas in its head and run amok awhile before you can reel that monster in and teach it a beguiling tap dance.
+
+![Puttin' on the Ritz - Young Frankenstein](blob:http://imgur.com/9d46d3ef-037a-4b95-87cf-2200a4b02024)
+
+This post is going to detail two major problems I faced building my CLI gem.
+
+First, I suppose I should tell you what it's about. For the first protfolio project we were assigned to create a data scraper with a CLI that showed to the user what we scraped. It was also supposed to have two levels of detail. Listing the information and then showing more details if the user selected that option. I scraped TripAdvisor. There Travelers' Choice Awards come out every year, and the html doesn't change very much each time so it was a perfect candidate for the gem. The three lists I make are top 25 museums, 25 attractions, and 25 landmarks.
+
+Shameless plug: you can find it on rubygems.org. (The link: https://rubygems.org/gems/tripadvisor_best.) It's not perfect and feedback is encouraged.
+
+Major challenge one in attacking this project was creating the CLI. I know you thought I'd say the scraper, I thought I was too, but there's is only so much complexity with HTML and CSS. The CLI on the otherhand was its own monster.
+
+Part one of the problem: I debated throughout over when I should scrape the pages - when a user asked for a particular list or at the beginning. I chose beginning, and here's why...
+
+A long pause in the middle to scrape the page might give a user pause when trying to execute the program. The even bigger problem was how to tell my gem not to rescrape the webpages if the user wanted to see the list again. There was the possibility of an if/else statement, but that didn't sit right with me, which was why I chose at the start and gave little load messages to help sooth my user as they waited a short bit for startup.
+
+Problem two: was how to talk to the scraper. I didn't want my classes of Museum, Attraction, and Landmark having any knowledge of the Scraper class or each other, which was why I knew the CLI class would have to call the Scraper and then take the Scraper's return values and push them to their respective objects.
+
+My greatest discovery was finding I could store classes in a hash. It made transferring data a whole lot cleaner.
+
+Major challenge number two was getting the gem created and published. It was a relief when I learned I didn't have to code my gemfiles by hand. Later on I want to do this in order to understand the details, but it was a little over my head for the first project. Which brings me to something I can't stress enough...
+
+Bundler is a lifesaver.
+
+Not only can bundler initialize your gem file `bundle gem gem_name`, it will help you launch your gem upon completion `bundle exec rake release`, just be sure to have `cd`ed into your gem's directory before issuing the command.
+
+I'll readily admit I don't have everything figured out when it comes to gemspecs, and creation of my first gem might have gone easier with rspec, if I had taken the time to write specs for (a goal for my second portfolio project, for sure). However, until then I have a working gem and a whole lot of knowledge finally solidified.
+
+I can't wait for my assessment and some helpful criticism. Until then...
+
+![Give my creation life! - Young Frankenstein](http://i.imgur.com/hkcRLXV.mp4
