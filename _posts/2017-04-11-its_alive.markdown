@@ -1,10 +1,9 @@
 ---
 layout: post
-title:  "It's ALIVE!"
+title:  "It's ALIVE! - Building a CLI Gem"
 date:   2017-04-10 22:08:19 -0400
 ---
 
-# Building a CLI Gem
 
 ![It's ALIVE! - Young Frankenstein](http://i.imgur.com/2VwgBem.gif)
 
