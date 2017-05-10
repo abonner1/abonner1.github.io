@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Building Basic CRUD apps with Sinatra
-date:   2017-05-10 21:38:09 +0000
+date:   2017-05-10 17:38:10 -0400
 ---
 
 
@@ -9,7 +9,7 @@ Two months in, and I've finished my second project, a Sinatra applicaiton useing
 
 ![Jessica Fletcher - Cup of Tea](http://i.imgur.com/5V2ohTU.gif)
 
-You can check out my project at [](https://github.com/abonner1/sinatra-booksellers-project).
+You can check out my project at [https://github.com/abonner1/sinatra-booksellers-project](https://github.com/abonner1/sinatra-booksellers-project).
 
 It's not very pretty without CSS, but it's backend is more than functional. The mechanics are all there with the option of expanding the application later as new features are added. The premise of my app is an online used and antiquarian bookseller where any user can add listings of books they are willing to sell.
 
