@@ -13,7 +13,7 @@ You can check out my project at [https://github.com/abonner1/sinatra-booksellers
 
 It's not very pretty without CSS, but it's backend is more than functional. The mechanics are all there with the option of expanding the application later as new features are added. The premise of my app is an online used and antiquarian bookseller where any user can add listings of books they are willing to sell.
 
-# Under the Hood
+## Under the Hood
 Here's the structure of the app:
 
 ```
@@ -68,7 +68,7 @@ group :test do
 end
 ```
 
-# Creating Valid Models
+## Creating Valid Models
 I tried to keep it manageable with the models. For the sake of this project, a user `has_many` books, and a book `belongs_to` a user.
 
 I'm grateful I took a little time between the Fwitter project and starting on my profolio project since my code review for Fwitter came through with some enlightening insights that made validations a whole heck of a lot easier. Instead, of checking for blank fields manually like this in the controller:
@@ -85,7 +85,7 @@ validates_presence_of :username, :email, :password_digest
 
 This macro makes the User class answerable to the method `.valid?`, which will return true if a record to be created or updated matches validation requirements and false otherwise. When a new record doesn't pass validations, it will not be added (or updated) in the database, but no error is raised that outrightly breaks your program. It simply doesn't migrate the change.
 
-# Making the Magic Happen
+## Making the Magic Happen
 A perfect example of how this works plays out in my BooksController:
 
 ```
@@ -111,7 +111,7 @@ This "new" action has both a "get" and a "post" route. The get route will only r
 
 Here we see that the book is first created by implicitly adding a newly instantiated book object to the current_users books array. This is a little misleading. The `.create` method is actually doing two things: `Book.new(params[:book])` and `book.save`. If the validations fail (in this case if a user does not have a username, email, or password), only the `.new` method is called, initializing a ruby instance but not saving it, which allows us to call `book.valid?` in the next line even when the instance is not saved in the database. If, however, the validations return true an instance of the book class is both intitialized and saved.
 
-# Dynamic Layouts
+## Dynamic Layouts
 Another feature I tested out in this Sinatra project was making dynamic layouts. I wanted to see if there was a way to make a menu the user would see when logged out and another when logged in. Here you can see this was accomplished with a simple if/else statement.
 
 ```
@@ -136,7 +136,7 @@ Another feature I tested out in this Sinatra project was making dynamic layouts.
 
 The major differences in layout appear in the home page, which directs a user to the `/` view when logged out and the `/books` view when logged in. Also, a logged-in user can view there own account.
 
-# Conclusion
+## Conclusion
 Check out my app in github for more details on the rest of the CRUD app. You'll see in the books controller I labeled each action in order to seperate out what parts of the app are doing what. You may notice that I added functionality for updating account informaiton that even includes validating changes with a password. While it works, I want to explore the details of that more closely.
 
 Who knows? Maybe this is the makings of the next abebooks or biblio.com. Propbably not, but I can dream. Cheers!
