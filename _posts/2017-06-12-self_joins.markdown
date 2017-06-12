@@ -4,7 +4,9 @@ title:  Self Joins
 date:   2017-06-10 17:00:00 -0700
 ---
 
-There's a way to create ActiveRecord associations within a single table. It's called a self join.
+![Kermit Typing Frantically](http://i.imgur.com/16NAsan.gif)
+
+There's a way to create ActiveRecord associations within a single table! It's called a self join.
 
 The concept is a little harder than you think to first wrap your head around. I'll give you two short examples of the self join and where it is useful.
 
