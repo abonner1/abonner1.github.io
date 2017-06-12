@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Self Join
+title:  Self Joins
 date:   2017-06-10 17:00:00 -0700
 ---
 
