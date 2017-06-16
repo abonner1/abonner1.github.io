@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Making a Rails App, Part 1"
-date:   2017-06-16 01:26:14 +0000
+date:   2017-06-15 21:26:15 -0400
 ---
 
 ![Kramer Typing](http://i.imgur.com/bOjrnGa.gif)
@@ -71,7 +71,7 @@ All that being said, it didn't save me from severe model troubles. That's where 
 
 ## Testing it out
 
-I just recently purchased *Everyday Rails Testing with Rspec*. I'm only a few pages in, so I had no intention of rolling out tests for my project. If I had I don't think I would have needed to start over... twice. In fact, the only reason the third try succeeded was because I took the time to write out some simple model tests to ensure that everyone was playing nicely.
+I just recently purchased *Everyday Rails Testing with RSpec*. I'm only a few pages in, so I had no intention of rolling out tests for my project. If I had I don't think I would have needed to start over... twice. In fact, the only reason the third try succeeded was because I took the time to write out some simple model tests to ensure that everyone was playing nicely.
 
 Needless to say, testing is important. And it doesn't have to complicated if you haven't written tests before. Look at my user spec:
 
@@ -104,7 +104,7 @@ end
 
 I don't even think I wrote everything correctly or at least in the ruby way. I couldn't figure out when to use `describe`, but those tests work, as well as my models. That's all that matters for now!
 
-If your reading this and haven't gotten to Rails yet, please, take the time to learn a little Rspec the moment you start Rails. It will save you countless hours of working through every error in your controllers and views until you finally come out with a app that does the job and does it right.
+If your reading this and haven't gotten to Rails yet, please, take the time to learn a little RSpec the moment you start Rails. It will save you countless hours of working through every error in your controllers and views until you finally come out with a app that does the job and does it right.
 
 ## Working it out
 
